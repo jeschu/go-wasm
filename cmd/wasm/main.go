@@ -33,7 +33,7 @@ func jsonWrapper() js.Func {
 		fmt.Printf("input %s\n", &inputJSON)
 		pretty, err := prettyJson(inputJSON)
 		if err != nil {
-			fmt.Printf("unable to conver to json %v\n", err)
+			fmt.Printf("unable to convert to json %v\n", err)
 			return err.Error()
 		}
 		return pretty
